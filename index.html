@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="bootstrap.min.css"/> 
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .main-container {
+            position: relative;
+            width: 25%;
+            max-width: 400px;
+            min-width: 300px;
+        }
+
+        .image {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.75);
+            width: 100%;
+            height: 0;
+            transition: .5s ease;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            padding: 1px;
+        }
+
+        .main-container:hover .overlay {
+            height: 100%;
+            opacity: 1;
+        }
+
+        h1 {
+            color: aliceblue;
+            font-size: 2em;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            transform: rotate(-5deg) skew(-5deg);
+            margin: 0;
+        }
+
+        h2 {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: white;
+            font-size: 1em;
+            letter-spacing: 5px;
+            line-height: 1.5em;
+            margin: 10px 0 0;
+            width: 90%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <img src="./fruit4.jpg" alt="" class="image">
+        <div class="overlay">
+            <h1>Fruit</h1>
+            <h2>Lorem ipsum dolor sit amet consectetur adipisicing.</h2>
+        </div>
+    </div>
+</body>
+
+</html>
